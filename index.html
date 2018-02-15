@@ -1,25 +1,20 @@
 <!doctype html>
 <html>
-
 <head>
-  
-
-</head>
-
-<body>
-    Enter First No <input type="text" id="first-no"> Enter Second No <input type="text" id="second-no"><br/><br/>
-    <button onclick="add()">Add</button>&nbsp; <input type="text" id="ans">
-
-</body>
-  <script>
-    function add() {
-        var a, b, c;
-        a=Number(document.getElementById("first-no").value);
-        b=Number(document.getElementById("first-no").value);
-        c=a+b;
-        document.getElementById("ans").value=c;
-    }
-
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a + b;
+document.getElementById("answer").value= c;
+}
 </script>
-
+</head>
+<body>
+Enter First Number<input id="first"><br>
+Enter second Number<input id="second"><br>
+<button onclick="add()">Add</button>
+<input id="answer">
+</body>
 </html>
